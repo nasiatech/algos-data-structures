@@ -17,7 +17,8 @@ class R1AndrewTest {
     }
     @Test
     public void testisMultiple(){
-        assertEquals(true, testAll.R3isMultiple(2,4));
+        assertEquals(false, testAll.R3isMultiple(0,4));
+
     }
 
 }

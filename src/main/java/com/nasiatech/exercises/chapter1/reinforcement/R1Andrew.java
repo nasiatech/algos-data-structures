@@ -38,9 +38,9 @@ public class R1Andrew {
     }
 
     public boolean R3isMultiple(long m, long n){
-        if(n % m == 0){
-            return true;
+        if(m == 0){
+            return false;
         }
-        return false;
+        return n % m == 0;
     }
 }
