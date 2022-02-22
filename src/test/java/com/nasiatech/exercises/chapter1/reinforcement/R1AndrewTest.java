@@ -23,6 +23,12 @@ class R1AndrewTest {
     @Test
     public void testR4isEven(){
         assertTrue(testAll.R4isEven(4));
+        assertFalse(testAll.R4isEven(15));
     }
 
+    @Test
+    public void testR5sumAll(){
+        assertEquals(10, testAll.sumOfAll(4));
+        assertEquals(0, testAll.sumOfAll(0));
+    }
 }

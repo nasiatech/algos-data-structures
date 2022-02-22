@@ -51,4 +51,12 @@ public class R1Andrew {
         }
         return flag;
     }
+
+    public int sumOfAll(int value){
+        int sum = 0;
+        for(int a = 0; a <= value; a++){
+            sum = sum+a;
+        }
+        return sum;
+    }
 }
