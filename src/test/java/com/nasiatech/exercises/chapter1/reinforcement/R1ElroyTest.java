@@ -21,4 +21,10 @@ class R1ElroyTest {
         System.out.println(elroy.r3IsMultiple(4,0));
     }
 
+    @Test
+    public void testR4() {
+        assertTrue(elroy.r4IsEven(4));
+        assertFalse(elroy.r4IsEven(11));
+    }
+
 }
