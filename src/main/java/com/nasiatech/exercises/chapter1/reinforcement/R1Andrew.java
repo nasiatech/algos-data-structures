@@ -1,7 +1,6 @@
 package com.nasiatech.exercises.chapter1.reinforcement;
 
 import java.util.Scanner;
-
 public class R1Andrew {
     Scanner keyboard = new Scanner(System.in);
 
@@ -9,7 +8,7 @@ public class R1Andrew {
         return a + b;
     }
 
-    public void inputAllBase(){
+    public void R1inputAllBase(){
         int intValue;
         char charValue;
         double doubleValue;
@@ -36,5 +35,12 @@ public class R1Andrew {
         longValue = keyboard.nextLong();
         System.out.println("Long value: "+longValue);
 
+    }
+
+    public boolean R3isMultiple(long m, long n){
+        if(n % m == 0){
+            return true;
+        }
+        return false;
     }
 }
