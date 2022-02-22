@@ -43,4 +43,12 @@ public class R1Andrew {
         }
         return n % m == 0;
     }
+
+    public boolean R4isEven(int value){
+        boolean flag = false;
+        for(int i = 0; i<=value; i++){
+            flag = !flag;
+        }
+        return flag;
+    }
 }

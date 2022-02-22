@@ -20,5 +20,9 @@ class R1AndrewTest {
         assertEquals(false, testAll.R3isMultiple(0,4));
 
     }
+    @Test
+    public void testR4isEven(){
+        assertTrue(testAll.R4isEven(4));
+    }
 
 }
