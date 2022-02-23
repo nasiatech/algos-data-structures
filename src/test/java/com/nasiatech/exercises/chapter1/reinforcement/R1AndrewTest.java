@@ -49,4 +49,10 @@ class R1AndrewTest {
     public void testCountString(){
         assertEquals(2, testAll.countVowels("Andrew"));
     }
+
+    @Test
+    public void testremovePunctuation(){
+        StringBuilder s = new StringBuilder ("This is , Hello, world");
+        assertEquals(true, "This is  Hello world".equals(testAll.removePunk(s).toString()));
+    }
 }

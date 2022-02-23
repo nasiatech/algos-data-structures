@@ -95,4 +95,22 @@ public class R1Andrew {
         }
         return count;
     }
+
+    public String removePuntuation(String stringIput){
+        stringIput = stringIput.replaceAll("\\p{P}", "");
+        return stringIput;
+    }
+
+    public StringBuilder removePunk(StringBuilder stringInput){
+        int len = stringInput.length();
+        for (int i = 0; i < len-1; i++){
+            char ch = stringInput.charAt(i);
+            if(ch == '!' || ch == ',' || ch == '.'){
+                stringInput.deleteCharAt(i);
+                len--;
+            }
+        }
+        return stringInput;
+    }
+
 }
