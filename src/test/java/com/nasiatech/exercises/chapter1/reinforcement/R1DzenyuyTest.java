@@ -34,4 +34,9 @@ class R1DzenyuyTest {
         assertEquals(14,ob.SumOfSquares(3));
     }
 
+    //test case for number of vowels
+    @Test
+    public void testNumberOFvowels(){
+        assertEquals(5,ob.numberOfVowels("aeoui"));
+    }
 }

@@ -77,4 +77,15 @@ public class R1Dzenyuy {
         }
         return total;
     }
+
+    public int numberOfVowels(String s){
+        int total = 0;
+        for(int i =0; i<s.length(); i++)
+        {
+            char c = s.charAt(i);
+            if(c=='a' || c=='A' || c=='e' || c=='E' || c=='o' || c== 'O' || c=='u' || c=='U' || c=='i' || c=='I')
+                total++;
+        }
+        return total;
+    }
 }
