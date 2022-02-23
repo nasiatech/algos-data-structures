@@ -7,9 +7,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class R1DzenyuyTest {
     public R1Dzenyuy ob = new R1Dzenyuy();
     @Test
-     public void test(){
+     public void testIsMultiple(){
          assertTrue(ob.isMultiple(6,3));
      }
 
+     @Test
+    public void testIsEven(){
+        assertTrue(ob.isEven(4));
+     }
 
 }

@@ -35,4 +35,9 @@ public class R1Dzenyuy {
     public boolean isMultiple(long m, long n){
     return  m%n==0;
     }
+
+    //method is iseven r14
+    public boolean isEven(long a){
+        return a%2==0;
+    }
 }
