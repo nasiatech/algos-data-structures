@@ -46,4 +46,14 @@ public class R1Dzenyuy {
         return status;
     }
 
+    //sum all integers less than or equall to n
+    public int SumOfNumbersLessthanN(int n){
+        int total =0;
+        for(int i=1; i<=n; i++)
+        {
+            total+=i;
+        }
+        return total;
+    }
+
 }

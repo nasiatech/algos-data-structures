@@ -16,4 +16,8 @@ class R1DzenyuyTest {
         assertTrue(ob.isEven(4));
      }
 
+     @Test void  testSum(){
+        assertEquals(6,ob.SumOfNumbersLessthanN(3));
+     }
+
 }
