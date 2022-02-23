@@ -37,4 +37,10 @@ class R1AndrewTest {
         assertEquals(4, testAll.R6sumOfAllOds(4));
         assertEquals(9, testAll.R6sumOfAllOds(6));
     }
+
+    @Test
+    public void testR7sumOfSquares(){
+        assertEquals(0, testAll.R7sumOfSquares(0));
+        assertEquals(14, testAll.R7sumOfSquares(3));
+    }
 }
