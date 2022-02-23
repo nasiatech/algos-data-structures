@@ -84,7 +84,7 @@ public class R1Andrew {
         return sum;
     }
 
-    public int countVowels(String stringInput){
+    public int R8countVowels(String stringInput){
         int count = 0;
         int len  = stringInput.length();
         for (int i = 0; i< len; i++){
@@ -96,12 +96,12 @@ public class R1Andrew {
         return count;
     }
 
-    public String removePuntuation(String stringIput){
+    public String R9_1removePuntuation(String stringIput){
         stringIput = stringIput.replaceAll("\\p{P}", "");
         return stringIput;
     }
 
-    public StringBuilder removePunk(StringBuilder stringInput){
+    public StringBuilder R9removePunk(StringBuilder stringInput){
         int len = stringInput.length();
         for (int i = 0; i < len-1; i++){
             char ch = stringInput.charAt(i);
