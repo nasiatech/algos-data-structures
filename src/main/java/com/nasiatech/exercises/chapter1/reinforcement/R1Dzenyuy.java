@@ -56,4 +56,14 @@ public class R1Dzenyuy {
         return total;
     }
 
+    //sum of all numbers less than or equall to n
+    public int sumOfOddlessthanN(int n){
+        int total =0;
+        for(int i=1; i<=n; i++)
+        {
+            if(i%2 != 0)
+                total+=i;
+        }
+        return total;
+    }
 }

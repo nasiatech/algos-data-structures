@@ -16,8 +16,15 @@ class R1DzenyuyTest {
         assertTrue(ob.isEven(4));
      }
 
-     @Test void  testSum(){
+     @Test
+     public void  testSum(){
         assertEquals(6,ob.SumOfNumbersLessthanN(3));
+     }
+
+     //test for all ood sum
+     @Test
+    public  void testOddSum(){
+        assertEquals(9, ob.sumOfOddlessthanN(5));
      }
 
 }
