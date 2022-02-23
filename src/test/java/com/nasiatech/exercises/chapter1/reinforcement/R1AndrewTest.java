@@ -5,15 +5,30 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class R1AndrewTest {
+    R1Andrew testAll = new R1Andrew();
     @Test
     public void testAdd(){
-        R1Andrew testadd = new R1Andrew();
-        assertEquals(5, testadd.addNumber(2,3));
+        assertEquals(5, testAll.addNumber(2,3));
     }
     @Test
     public void testAllBase(){
-        R1Andrew testAll = new R1Andrew();
-        testAll.inputAllBase();
+
+        testAll.R1inputAllBase();
+    }
+    @Test
+    public void testisMultiple(){
+        assertEquals(false, testAll.R3isMultiple(0,4));
+
+    }
+    @Test
+    public void testR4isEven(){
+        assertTrue(testAll.R4isEven(4));
+        assertFalse(testAll.R4isEven(15));
     }
 
+    @Test
+    public void testR5sumAll(){
+        assertEquals(10, testAll.sumOfAll(4));
+        assertEquals(0, testAll.sumOfAll(0));
+    }
 }
