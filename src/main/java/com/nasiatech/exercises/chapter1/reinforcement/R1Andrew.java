@@ -83,4 +83,16 @@ public class R1Andrew {
         }
         return sum;
     }
+
+    public int countVowels(String stringInput){
+        int count = 0;
+        int len  = stringInput.length();
+        for (int i = 0; i< len; i++){
+            char ch = stringInput.charAt(i);
+            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                count++;
+            }
+        }
+        return count;
+    }
 }

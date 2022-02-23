@@ -44,4 +44,9 @@ class R1AndrewTest {
         assertEquals(14, testAll.R7sumOfSquares(3));
 
     }
+
+    @Test
+    public void testCountString(){
+        assertEquals(2, testAll.countVowels("Andrew"));
+    }
 }
