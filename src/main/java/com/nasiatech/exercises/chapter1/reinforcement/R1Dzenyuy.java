@@ -66,4 +66,15 @@ public class R1Dzenyuy {
         }
         return total;
     }
+
+    //sum of squares less than or equall to n
+    public long SumOfSquares(long n)
+    {
+        long total =0;
+        for(int i=1; i<=n; i++)
+        {
+            total+=i*i;
+        }
+        return total;
+    }
 }

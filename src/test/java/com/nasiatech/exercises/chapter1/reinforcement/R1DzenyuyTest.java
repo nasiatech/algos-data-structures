@@ -27,4 +27,11 @@ class R1DzenyuyTest {
         assertEquals(9, ob.sumOfOddlessthanN(5));
      }
 
+     //test for sumOfSquares
+    @Test
+    public  void testSumSquares()
+    {
+        assertEquals(14,ob.SumOfSquares(3));
+    }
+
 }
