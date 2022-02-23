@@ -47,12 +47,12 @@ class R1AndrewTest {
 
     @Test
     public void testCountString(){
-        assertEquals(2, testAll.countVowels("Andrew"));
+        assertEquals(2, testAll.R8countVowels("Andrew"));
     }
 
     @Test
     public void testremovePunctuation(){
         StringBuilder s = new StringBuilder ("This is , Hello, world");
-        assertEquals(true, "This is  Hello world".equals(testAll.removePunk(s).toString()));
+        assertEquals(true, "This is  Hello world".equals(testAll.R9removePunk(s).toString()));
     }
 }
