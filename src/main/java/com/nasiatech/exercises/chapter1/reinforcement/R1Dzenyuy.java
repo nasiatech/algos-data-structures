@@ -38,6 +38,12 @@ public class R1Dzenyuy {
 
     //method is iseven r14
     public boolean isEven(long a){
-        return a%2==0;
+        boolean status = false;
+        for(int i=0; i<=a; i++)
+        {
+            status = !status;
+        }
+        return status;
     }
+
 }
