@@ -28,7 +28,31 @@ class R1AndrewTest {
 
     @Test
     public void testR5sumAll(){
-        assertEquals(10, testAll.sumOfAll(4));
-        assertEquals(0, testAll.sumOfAll(0));
+        assertEquals(10, testAll.R5sumOfAll(4));
+        assertEquals(0, testAll.R5sumOfAll(0));
+    }
+
+    @Test
+    public void testR6sumOfAllOds(){
+        assertEquals(4, testAll.R6sumOfAllOds(4));
+        assertEquals(9, testAll.R6sumOfAllOds(6));
+    }
+
+    @Test
+    public void testR7sumOfSquares(){
+        assertEquals(0, testAll.R7sumOfSquares(0));
+        assertEquals(14, testAll.R7sumOfSquares(3));
+
+    }
+
+    @Test
+    public void testCountString(){
+        assertEquals(2, testAll.countVowels("Andrew"));
+    }
+
+    @Test
+    public void testremovePunctuation(){
+        StringBuilder s = new StringBuilder ("This is , Hello, world");
+        assertEquals(true, "This is  Hello world".equals(testAll.removePunk(s).toString()));
     }
 }
