@@ -30,4 +30,9 @@ public class R1Dzenyuy {
         char c1 = input.next().charAt(0);
         System.out.printf("You entered : %s\n\n", c1);
     }
+
+    // method to check if number is a multiple of the other
+    public boolean isMultiple(long m, long n){
+    return  m%n==0;
+    }
 }
