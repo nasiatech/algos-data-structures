@@ -52,10 +52,20 @@ public class R1Andrew {
         return flag;
     }
 
-    public int sumOfAll(int value){
+    public int R5sumOfAll(int value){
         int sum = 0;
         for(int a = 0; a <= value; a++){
             sum = sum+a;
+        }
+        return sum;
+    }
+
+    public int R6sumOfAllOds(int value){
+        int sum = 0;
+        for (int a = 1; a <= value; a++){
+            if(!(a % 2 == 0)) {
+                sum = sum + a;
+            }
         }
         return sum;
     }

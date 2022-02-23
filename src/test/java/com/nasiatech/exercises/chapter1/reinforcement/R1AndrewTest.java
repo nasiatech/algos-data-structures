@@ -28,7 +28,13 @@ class R1AndrewTest {
 
     @Test
     public void testR5sumAll(){
-        assertEquals(10, testAll.sumOfAll(4));
-        assertEquals(0, testAll.sumOfAll(0));
+        assertEquals(10, testAll.R5sumOfAll(4));
+        assertEquals(0, testAll.R5sumOfAll(0));
+    }
+
+    @Test
+    public void testR6sumOfAllOds(){
+        assertEquals(4, testAll.R6sumOfAllOds(4));
+        assertEquals(9, testAll.R6sumOfAllOds(6));
     }
 }
