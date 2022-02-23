@@ -1,7 +1,6 @@
 package com.nasiatech.exercises.chapter1.reinforcement;
 
 import java.util.Scanner;
-
 public class R1Andrew {
     Scanner keyboard = new Scanner(System.in);
 
@@ -9,7 +8,7 @@ public class R1Andrew {
         return a + b;
     }
 
-    public void inputAllBase(){
+    public void R1inputAllBase(){
         int intValue;
         char charValue;
         double doubleValue;
@@ -37,4 +36,81 @@ public class R1Andrew {
         System.out.println("Long value: "+longValue);
 
     }
+
+    public boolean R3isMultiple(long m, long n){
+        if(m == 0){
+            return false;
+        }
+        return n % m == 0;
+    }
+
+    public boolean R4isEven(int value){
+        boolean flag = false;
+        for(int i = 0; i<=value; i++){
+            flag = !flag;
+        }
+        return flag;
+    }
+
+    public int R5sumOfAll(int value){
+        int sum = 0;
+        for(int a = 0; a <= value; a++){
+            sum = sum+a;
+        }
+        return sum;
+    }
+
+    public int R6sumOfAllOds(int value){
+        int sum = 0;
+        if(value <= 0){
+            return 0;
+        }
+        for (int a = 1; a <= value; a++){
+            if(!(a % 2 == 0)) {
+                sum = sum + a;
+            }
+        }
+        return sum;
+    }
+
+    public int R7sumOfSquares(int value){
+        int sum = 0;
+        if(value == 0){
+            return 0;
+        }
+        for (int a = 0; a <= value; a++){
+            sum = (sum + a * a);
+        }
+        return sum;
+    }
+
+    public int R8countVowels(String stringInput){
+        int count = 0;
+        int len  = stringInput.length();
+        for (int i = 0; i< len; i++){
+            char ch = stringInput.charAt(i);
+            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public String R9_1removePuntuation(String stringIput){
+        stringIput = stringIput.replaceAll("\\p{P}", "");
+        return stringIput;
+    }
+
+    public StringBuilder R9removePunk(StringBuilder stringInput){
+        int len = stringInput.length();
+        for (int i = 0; i < len-1; i++){
+            char ch = stringInput.charAt(i);
+            if(ch == '!' || ch == ',' || ch == '.'){
+                stringInput.deleteCharAt(i);
+                len--;
+            }
+        }
+        return stringInput;
+    }
+
 }
