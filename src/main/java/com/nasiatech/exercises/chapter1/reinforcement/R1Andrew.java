@@ -1,5 +1,10 @@
 package com.nasiatech.exercises.chapter1.reinforcement;
 
+import com.sun.security.jgss.GSSUtil;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Locale;
 import java.util.Scanner;
 public class R1Andrew {
     Scanner keyboard = new Scanner(System.in);
@@ -88,7 +93,7 @@ public class R1Andrew {
         int count = 0;
         int len  = stringInput.length();
         for (int i = 0; i< len; i++){
-            char ch = stringInput.charAt(i);
+            char ch = stringInput.toLowerCase().charAt(i);
             if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
                 count++;
             }
@@ -113,4 +118,66 @@ public class R1Andrew {
         return stringInput;
     }
 
+    public int[] swap(int x, int y){
+        int tmp;
+        tmp = x;
+        x = y;
+        y = tmp;
+
+        return new int[]{x, y};
+    }
+
+
+        //    public static void main(String[] args){
+        //        Flower f = new Flower("Rose", 12, 250);
+        //        //f.setFlowername("Hibiscus");
+        //        //f.setNumOfPetalss(12);
+        //        //f.setPrize(250);
+        //
+        //        System.out.println(f.getFlowername());
+        //        System.out.println(f.getNumOfPetalss());
+        //        System.out.println(f.getPrize());
+        //
+        //}
 }
+    class Flower {
+
+        private String flowername;
+        private int numOfPetalss;
+        private float prize;
+
+        public Flower(String name, int numOfPetals, float price) {
+            flowername = name;
+            numOfPetalss = numOfPetals;
+            prize = price;
+
+        }
+
+
+        public void setFlowername(String flowername) {
+            this.flowername = flowername;
+        }
+
+        public String getFlowername() {
+            return flowername;
+        }
+
+        public void setNumOfPetalss(int numOfPetalss) {
+            this.numOfPetalss = numOfPetalss;
+        }
+
+        public int getNumOfPetalss() {
+            return numOfPetalss;
+        }
+
+
+        public void setPrize(float prize) {
+            this.prize = prize;
+        }
+
+        public float getPrize() {
+            return prize;
+        }
+    }
+
+

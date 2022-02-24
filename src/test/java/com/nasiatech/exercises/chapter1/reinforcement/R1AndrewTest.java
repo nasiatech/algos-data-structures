@@ -55,4 +55,17 @@ class R1AndrewTest {
         StringBuilder s = new StringBuilder ("This is , Hello, world");
         assertEquals(true, "This is  Hello world".equals(testAll.R9removePunk(s).toString()));
     }
+
+    @Test
+    public void testFlower(){
+        Flower t = new Flower("Rose", 11, 275);
+        assertEquals("Rose", t.getFlowername());
+        assertEquals(11, t.getNumOfPetalss());
+        assertEquals(275, t.getPrize());
+
+        t.setFlowername("Hibiscus");
+        assertEquals("Hibiscus", t.getFlowername());
+
+
+    }
 }
