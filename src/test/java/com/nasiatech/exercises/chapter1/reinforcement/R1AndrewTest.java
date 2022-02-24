@@ -68,4 +68,12 @@ class R1AndrewTest {
 
 
     }
+
+    @Test
+    public void testupdateCardLimit(){
+        CreditCard card = new CreditCard("Andrew","UBA","Savings",100,10000);
+//        int value = card.updateCardLimit(1000);
+//        assertTrue(value == 1100);
+        assertEquals(500, card.updateCardLimit(400));
+    }
 }
