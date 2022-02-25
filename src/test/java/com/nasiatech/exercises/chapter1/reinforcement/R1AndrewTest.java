@@ -75,5 +75,6 @@ class R1AndrewTest {
 //        int value = card.updateCardLimit(1000);
 //        assertTrue(value == 1100);
         assertEquals(500, card.updateCardLimit(400));
+        assertEquals(9500, card.makePayment(500));
     }
 }

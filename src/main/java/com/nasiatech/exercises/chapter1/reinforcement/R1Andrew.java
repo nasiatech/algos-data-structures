@@ -240,8 +240,14 @@ public class R1Andrew {
 
     }
 
-    public void makePayment(double amount) { // make a payment
-        balance -=  amount;
+    public double makePayment(double amount) { // make a payment
+        if (amount > 0){
+            balance -=  amount;
+        }
+        else{
+            System.exit(0);
+        }
+        return balance;
     }
     public int updateCardLimit(int amount){
         limit = limit + amount;
@@ -257,10 +263,10 @@ public class R1Andrew {
         System.out.println("Limit = " + card.limit);// implicit case
     }
 
-    public static void main(String[] args){
-        CreditCard card = new CreditCard("Andrew","UBA","Savings",100,10000);
-        card.updateCardLimit(400);
-        System.out.println(card.limit);
-    }
+//    public static void main(String[] args){
+//        CreditCard card = new CreditCard("Andrew","UBA","Savings",100,10000);
+//        card.updateCardLimit(400);
+//        System.out.println(card.limit);
+//    }
 }
 
